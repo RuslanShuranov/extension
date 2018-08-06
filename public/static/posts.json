@@ -2,16 +2,19 @@
     {
         "id": 1,
         "title": "First post",
+        "imageUrl": "/static/image1.jpg",
         "body": "First post text"
     },
     {
         "id": 2,
         "title": "Second post",
+        "imageUrl": "https://cdn.pixabay.com/photo/2016/06/18/17/42/image-1465348_1280.jpg",
         "body": "Second post text"
     },
     {
         "id": 3,
         "title": "Third post",
+        "imageUrl": "https://cdn.pixabay.com/photo/2016/06/18/17/42/image-1465348_1280.jpg",
         "body": "Just a text"
     }
 ]

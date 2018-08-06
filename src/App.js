@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import './App.css';
 import PostsPage from './pages/PostsPage'
 import store from './redux'
+import TopBar from './components/TopBar'
 
 class App extends Component {
   componentWillMount() {
@@ -19,6 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <TopBar />
         <PostsPage />
       </div>
     );
