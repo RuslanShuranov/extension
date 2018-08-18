@@ -7,6 +7,7 @@ import * as VisionAction from '../actions/VisionAction'
 class App extends Component {
 
     render() {
+        console.log(this.props.actions);
         const { myProp } = this.props.page;
         const { changeVision } = this.props.actions;
         return <div>
@@ -15,7 +16,7 @@ class App extends Component {
     }
 }
 
-function mapStateToProps (state) {
+function mapStateToProps (state,props) {
     return {
         page: state.page
     }

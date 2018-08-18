@@ -1,8 +1,14 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import {changeVision} from '../actions/VisionAction';
+import store from '../store/configureStore';
+import {connect} from 'react-redux';
+import {bindActionCreators} from "redux";
+import * as VisionAction from "../actions/VisionAction";
 
 class Sidebar extends Component {
-    onVisionChangeClick(e) {
-
+    onVisionChangeClick = () => {
+        console.log(this.props.myProp);
+        store.dispatch(changeVision(this.props.myProp))
     }
     render() {
         return <div>
@@ -14,4 +20,4 @@ class Sidebar extends Component {
     }
 }
 
-export default Sidebar;
+export default Sidebar
